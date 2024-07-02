@@ -1,0 +1,486 @@
+body{
+    margin: 0px;
+}
+#page{
+    background-color: rgba(145, 145, 145, 0.151);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 745px;
+}
+#page .image1{
+    width: 50%;
+    
+}
+#page .image1 img{
+    width: 100%;
+    height: 745px;
+    filter: grayscale(1);
+    border: 0px solid white;
+    border-radius: 30px;
+}
+#page .login{
+    width: 50%;
+}
+#page .login img{
+    width: 40%;
+    border-radius: 50%;
+}
+#page .login .login1{
+    text-align: center;
+    height: 625px;
+    width: 55%;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border: solid 1px white;
+    border-radius: 30px;
+}
+#page .login .login1 h2{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 0px;
+}
+#page .login .col1 input{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    width: 345px;
+}
+#page .login .col1 label{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+#page .login .col2 input{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    width: 345px;
+}
+#page .login .col2 label{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+#page .login .col3{
+    margin-top: 20px;
+}
+#page .login .col3 input{
+    font-size: 20px;
+    width: 120px;
+    margin: 25px 20px;
+    font-family: monospace;
+
+}
+#page .login .col4{
+    margin-top: 10px;
+}
+#page .login .col4 input{
+    float: left;
+    margin-left: 30px;
+
+}
+#page .login .col4 label{
+    float: left;
+
+}
+#page .login .col5 label{
+    float: right;
+    margin-right: 40px;
+}
+#page .login .col6 a {
+    float: left;
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+}
+#page .login .col6 a:hover{
+    text-decoration: overline ;
+}
+#page .login .col6 a:active{
+    text-decoration: overline ;
+}
+#page .login .col7 a {
+    float: right;
+    margin-right: 40px;
+    color: black;
+    text-decoration: none;
+}
+#page .login .col7 a:hover{
+    text-decoration: overline ;
+}
+#page .login .col7 a:active{
+    text-decoration: overline ;
+}
+/* css for registration Page */
+body{
+    margin: 0%;
+    background-image: url(image/R.png);
+    background-size: cover;
+}
+#header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: #000000 2px solid;
+    border-top: #000000 2px solid;
+}
+#header .logo{
+    width: 15%;
+}
+#header .logo img{
+    float: left;
+    max-width: 200px;
+    margin: 10px;
+}
+#header .heading{
+    width: 75%;
+    text-align: center;
+}
+#header .heading h1{
+    color: darkblue;
+    margin-top: 50px;
+    font-family: system-ui;
+    text-shadow: 2px 2px 8px #f8af16;
+    border-bottom: 2px solid black;
+}
+#header .menu{
+    width: 10%;
+    text-align: center;
+    margin-top: 20px;
+}
+#header .menu a{
+    color: darkblue;
+    font-size: 20px;
+    text-decoration: overline;
+    font-family: system-ui;
+    text-shadow: 0px 2px 5px #f8af16;
+}
+/* css for Content */
+
+#contentmain{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#contentmain .content .cont1{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#contentmain .content .cont1 h2{
+    font-size: 30px;
+    font-family: system-ui;
+    color: #00008b;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contentmain .content.cont1 h3{
+    font-family: system-ui;
+    margin-bottom: 0;
+}
+#contentmain .content .cont2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+#contentmain .content .cont2 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont2 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont3{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont3 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont3 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont4{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont4 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont4 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont5{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont5 label{
+    font-family: system-ui;
+}  
+#contentmain .content .cont5 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont6{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont6 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont6 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont7{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont7 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont7 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont8{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont8 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont8 input{
+    margin-left: 100px;
+    background: #e6d38b;
+}
+#contentmain .content .cont9{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+#contentmain .content .cont9 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont9 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #e6d38b;
+    border-radius: 10px;
+}
+#contentmain .content .cont10{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont10 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont10 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    background: #e6d38b;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+#contentmain .content .cont11{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont11 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont11 input{
+    margin-top: 4px;
+    width: 100%;
+    background: #e6d38b;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+#contentmain .content .cont12{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#contentmain .content .cont12 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont12 input{
+    margin-left: 100px;
+    background: #e6d38b;
+}
+#contentmain .content .cont13{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+#contentmain .content .cont13 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont13 input{
+    margin-left: 100px;
+    margin-top: 15px;
+    background: #e6d38b;
+}
+#contentmain .content .cont14{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+#contentmain .content .cont14 input{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont14 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont15{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+#contentmain .content .cont15 textarea{
+    margin-top: 4px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+#contentmain .content .cont15 label{
+    font-family: system-ui;
+}
+#contentmain .content .cont16{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+#contentmain .content .cont16 input{
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: #e6d38b;
+}
+.cont3 .uniquer{
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: #e6d38b; 
+}
+.cont4 .uniquer{
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: #e6d38b; 
+}
+.cont5 .uniquer{
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: #e6d38b; 
+}
+.cont6 .uniquer{
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 10px;
+    background: #e6d38b; 
+}
+/* css for Content side */
+#contentmain .contentside{
+    width: 40%;
+}
+#contentmain .contentside fieldset{
+    border: solid 2px;
+    height: 1100px;
+    margin-right: 25px;
+    margin-top: 10px;
+    border-radius: 25px;
+    background: #e6d38b;
+}
+#contentmain .contentside legend{
+    font-size: 40px;
+    font-family: cursive;
+    color: #00008b;
+}
+#contentmain .contentside p{
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 0%;
+    text-align: justify;
+}
+#contentmain .contentside img{
+    width: 550px;
+    border: solid 2px;
+    border-radius: 50px;
+}
+
+/* css for footer */
+#footer{
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    color: #000000;
+    text-shadow: 2px 2px 8px #e6d38b;
+    text-decoration: underline;
+}
+#footer p{
+    margin-top: 0%;
+}

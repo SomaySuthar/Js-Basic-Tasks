@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Classcolor {
+            color: blue;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>
+            HEllo World !!!!
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Bye World !!!!
+        </p>
+    </div>
+
+    <button onclick="Color_change()"> click</button>
+
+
+    <form id="myform">
+        <input type="number" id="myform"><br>
+        <input type="number" id="myform2"><br>
+    </form>
+    <button onclick="adder()"> Submit</button><br><br>
+    <p id="p1">Results Are Here</p>
+
+
+
+
+    <script>
+        // Q1 ==> ans
+
+        let city = ["surat", "ahmedabad", "rajkot", "mumbai", "surat", "delhi", "ahmedabad", "anand",];
+
+        let unique_city = [];
+
+        city.forEach((c) => {
+            if (!unique_city.includes(c)) {
+                unique_city.push(c);
+            }
+        });
+
+        console.log(unique_city);
+
+
+        // Q2 ==> ans
+
+        function Color_change() {
+
+            var divs = document.querySelectorAll('div , p');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].classList.add('Classcolor');
+            }
+        }
+
+        // Q3 ==> ans
+
+
+
+
+
+        // q4 ==> ans
+
+        var total = 0;
+
+        function adder() {
+            var num1 = +(document.getElementById("myform1").value);
+            var num2 = +(document.getElementById("myform2").value);
+            total += num1 + num2;
+            document.getElementById("p1").innerHTML = total;
+        }
+
+
+    </script>
+</body>
+
+</html>

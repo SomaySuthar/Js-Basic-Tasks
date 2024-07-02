@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container mt-5">
+            <form onsubmit="return validateAll()">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Username :-</label>
+                        <input type="text" class="form-control" id="inputUserName" placeholder="enter your full name" onblur="changeSentence()">
+                        <span id="userError" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email :-</label>
+                        <input type="email" class="form-control" placeholder="abc12@gmail.com" onblur="changeSentence()" id="inputEmail">
+                        <span id="emailError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password :-</label>
+                        <input type="password" class="form-control" placeholder="enter alphanumeric Strong Password" id="inputPassword">
+                        <span id="passwordError" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputMobileNo">Telephone No.</label>
+                    <input type="number" class="form-control" placeholder="enter your mobile no." id="inputMobileNo">
+                    <span id="mobileError" class="text-danger font-weight-bold"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress">Address :-</label>
+                    <input type="text" class="form-control" id="inputAddress" onblur="changeSentence()" placeholder="House no / Building name / Apartment / Nearby place">
+                    <span id="addressError" class="text-danger font-weight-bold"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputCity">City :-</label>
+                        <input type="text" class="form-control" onblur="changeSentence()" placeholder="enter your city name" id="inputCity">
+                        <span id="cityError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State :-</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose your state</option>
+                            <option>Gujarat</option>
+                            <option>Rajasthan</option>
+                            <option>Maharastra</option>
+                            <option>Uttrakhand</option>
+                        </select>
+                        <span id="stateError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip">Pincode :-</label>
+                        <input type="number" class="form-control" placeholder="your area pincode" id="inputPincode">
+                        <span id="PincodeError" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn btn-secondary">
+            </form>
+        </div>
+
+        <img src="image/" alt="">
+    </section>
+
+    <script>
+
+
+        function changeSentence() {
+
+           var x = document.getElementById("inputUserName");
+           x.value = x.value.toUpperCase();
+
+           var y = document.getElementById("inputEmail");
+           y.value = y.value.toUpperCase();
+
+           var z = document.getElementById("inputAddress");
+           z.value = z.value.toUpperCase();
+
+           var a = document.getElementById("inputCity");
+           a.value = a.value.toUpperCase();
+
+        }
+        
+
+
+        function validateAll() {
+
+            let inputUserName = document.getElementById('inputUserName').value;
+            let inputEmail = document.getElementById('inputEmail').value;
+            let inputPassword = document.getElementById('inputPassword').value;
+            let inputMobileNo = document.getElementById('inputMobileNo').value;
+            let inputAddress = document.getElementById('inputAddress').value;
+            let inputCity = document.getElementById('inputCity').value;
+            let inputState = document.getElementById('inputState').value;
+            let inputPincode = document.getElementById('inputPincode').value;
+
+            let userCheck = /^[A-Za-z. ]{3,25}$/;
+            let emailCheck = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,6}$/;
+            let mobileCheck = /^[789][0-9]{9}$/;
+            let passwordCheck = /^(?=.*[0-9])(?=.*[!@#\$%\^&\*])[a-zA-Z0-9!@#\$%\^&\*]{8,16}$/;
+            let cityCheck = /^[A-Za-z]{3,}$/;
+            let inputCheck = /^[0-9]{6}$/
+
+            let errorCheck = 0;
+
+            if (userCheck.test(inputUserName)) {
+                document.getElementById('userError').innerHTML = " ";
+            } else {
+                document.getElementById('userError').innerHTML = "*Username is invalid"
+                errorCheck = 1;
+            }
+
+            if (emailCheck.test(inputEmail)) {
+                document.getElementById('emailError').innerHTML = " ";
+            } else {
+                document.getElementById('emailError').innerHTML = "*Email is invalid"
+                errorCheck = 1;
+            }
+
+            if (passwordCheck.test(inputPassword)) {
+                document.getElementById('passwordError').innerHTML = " ";
+            } else {
+                document.getElementById('passwordError').innerHTML = "*password is invalid"
+                errorCheck = 1;
+            }
+
+            if (mobileCheck.test(inputMobileNo)) {
+                document.getElementById('mobileError').innerHTML = " ";
+            } else {
+                document.getElementById('mobileError').innerHTML = "*Mobile No. is invalid";
+                errorCheck = 1;
+            }
+
+            if (inputAddress == "") {
+                document.getElementById('addressError').innerHTML = "*please Enter your address";
+                errorCheck = 1;
+            } else {
+                document.getElementById('addressError').innerHTML = " ";
+            }
+
+            if (cityCheck.test(inputCity)) {
+                document.getElementById('cityError').innerHTML = " ";
+            } else {
+                document.getElementById('cityError').innerHTML = "*please Enter your city";
+                errorCheck = 1;
+            }
+
+            if (inputCheck.test(inputPincode)) {
+                document.getElementById('PincodeError').innerHTML = " ";
+            } else {
+                document.getElementById('PincodeError').innerHTML = "*Pincode invalid";
+                errorCheck = 1;
+            }
+
+            if(errorCheck == 0){
+               return true;
+            }else{
+                return false;
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+1
+3(2)
+6

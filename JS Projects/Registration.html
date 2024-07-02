@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/newpage.css">
+</head>
+<body style="background-image: url(image/R.png)">
+    <div id="header">
+        <div class="logo">
+            <img src="image/OIP (4).jpeg" alt="">
+        </div>
+        <div class="heading">
+            <h1>Our Live Online Wellness Workshops are Now Open for Registration!</h1>
+        </div>
+        <div class="menu">
+            <a href="#" target="_self">Login</a>
+        </div>
+    </div>
+<div id="contentmain">
+    <div class="content">
+        <form>
+        <div class="cont1">
+            <h2>Online Forms</h2>
+            <h3>Life Cycle Competition 2019 Registration Form</h3>
+        </div>
+        <div class="cont3">
+            <label for="">Full Name</label><br>
+            <input type="text" value="" id="name">
+            <button class="uniquer" onclick="checkalpha()">Check</button>
+        </div>
+        <div class="cont4">
+            <label for="">Phone No.</label><br>
+            <input type="number" value="" id="PhNo">
+            <button class="uniquer" onclick="checkNo()">Check</button>
+        </div>
+        <div class="cont5">
+            <label for="">E-mail</label><br>
+            <input type="email" value="" id="Email">
+            <button class="uniquer" onclick="checkEmail()">Check</button>
+        </div>
+        <div class="cont6">
+            <label for="">Age</label><br>
+            <input type="number" value="" id="age">
+            <button class="uniquer" onclick="checkage()">Check</button>
+        </div>
+        <div class="cont7">
+            <label for="">Address</label><br>
+            <input type="text" value="">
+        </div>
+        <div class="cont8">
+            <label for="">Group</label>
+            <input type="radio" id="html" name="fav_language" value="Professional">
+            <label for="html">Professional</label>
+            <input type="radio" id="css" name="fav_language" value="Non-professional">
+            <label for="css">Non-professional</label>
+        </div>
+        <div class="cont9">
+            <label for="">Universities (for Professional Group)</label><br>
+            <input type="text" value="">
+        </div>
+        <div class="cont10">
+            <label for="">Specialized Fields(for Professional Group)</label><br>
+            <input type="text" value="">
+        </div>
+        <div class="cont11">
+            <label for="">Occupations</label><br>
+            <input type="text" value="">
+        </div>
+        <div class="cont12">
+            <label for="">Form of Work</label>
+            <input type="checkbox" value="Article + Photography">
+            <label for="html">Article + Photography</label>
+            <input type="checkbox" value="Article + Video">
+            <label for="css">Article + Video</label>
+        </div>
+        <div class="cont13">
+            <label for="">Would you like to apply for the Life Cycle Nutrition Management Speech Contest? </label><br>
+            <input type="radio" id="html" name="fav_language" value="Yes">
+            <label for="html">Yes</label>
+            <input type="radio" id="css" name="fav_language" value="No">
+            <label for="css">No</label>
+        </div>
+        <div class="cont14">
+            <label for="">Subject</label><br>
+            <input type="text" value="">
+        </div>
+        <div class="cont15">
+            <label for="">Brief Introduction for your topic (limited to 150 words)</label><br>
+            <textarea name="" id="" cols="60" rows="10"></textarea>
+        </div>
+        <div class="cont16">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+    <div class="contentside">
+        <fieldset>
+            <legend>Competition</legend>
+            <p>The sport is governed overall by the Union Cycliste Internationale (UCI), which is based in Switzerland, and by each country’s cycling federation. Amateur races are held for both men and women in local, regional, and national competition by age group, ranging upward in age from competitors 12 to 13 years old. .</p>
+            <img src="image/Tour-de-France-Poitiers-Bordeaux.webp" alt="">
+            <p>In the World Championships, amateurs are no longer differentiated from professionals among men, but the sport is divided into those under 23, called espoirs (hopefuls), and those over that age. Categories of competition during the season include time trials, which can be an individual or team event; one-day, or classic, races in which distances can vary between 200 and 280 km (124 to 175 miles) for professionals and 140 to 200 km (87 to 124 miles) for amateurs; and multiday, or stage, races, basically a series of classic races run on successive days. The winner of a stage race is the rider with lowest aggregate time for all stages. Also popular, especially in Britain and the United States, are criterium races, which are run over a relatively short distance of 4 to 5 km (2.5 to 3 miles) for a succession of laps totaling up to 100 km (62 miles).</p>
+        </fieldset>
+    </div>
+</div>
+    <div id="footer">
+        <p>Copyright © 2021 All rights reserved.</p>
+    </div>
+
+    <script>
+        function checkalpha() {
+            let str = document.getElementById('name').value;
+            
+            let regexpe = /^[a-zA-Z]+ [a-zA-Z]+$/g;
+            if (!regexpe.test(str)) {
+                alert('Non valid User Name Please Enter Again');
+            }
+            else {
+                alert('Done');
+            }
+        }
+
+        function checkage() {
+            let str = document.getElementById('age').value;
+            let regexpe = /^1[89]|[2-9][0-9]$/g;
+            if (!regexpe.test(str)) {
+                alert('Non valid age Please Enter Again');
+            }
+            else {
+                alert('Done');
+            }
+        }
+
+        function checkEmail() {
+            let str = document.getElementById('Email').value;
+            let regexpe = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,6}$/g;
+            if (!regexpe.test(str)) {
+                alert('Non valid Email Please Enter Again');
+            }
+            else {
+                alert('Done');
+            }
+        }
+
+        function checkNo() {
+            let str = document.getElementById('PhNo').value;
+            let regexpe = /^\d{10}$/g;
+            if (!regexpe.test(str)) {
+                alert('Non valid number Please Enter Again');
+            }
+            else {
+                alert('Done');
+            }
+        }
+    </script>
+</body>
+</html>

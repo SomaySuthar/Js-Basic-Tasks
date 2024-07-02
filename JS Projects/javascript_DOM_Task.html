@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w3r_font_color {
+            color: red;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .w3r_bg_orange {
+            background: orange;
+            width: 30%;
+        }
+
+        .w3r_bg_red {
+            color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Q1. Using jQuery find all text areas, and paragraphs makes a set border and make borders red. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 1</h2>
+
+    <textarea id="textarea">JavaScript</textarea>
+    <p id="paragraph"> JavaScript</p>
+    <button onclick="border()">Click to check the effect</button>
+
+    <!-- Q2. Create a paragraph element with some text and append it to the end of the document body using jQuery. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 2</h2>
+
+    <button onclick="clickHere()">Click to check the effect 2</button>
+
+    <!-- Q3. Using jQuery add the class " w3r_font_color " to the last paragraph element. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 3</h2>
+
+    <p>PHP</p>
+    <p>Java</p>
+    <p>Python</p>
+
+    <button onclick="addClass()">Click to check the effect 3</button>
+
+    <!-- Q4. Using jQuery add a new class to an element that already has a class. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 4</h2>
+
+    <p class="w3r_bg_orange">The best way
+        we learn anything is by practice and
+        exercise questions.</p>
+
+    <button onclick="addOneMore()">Click to check the effect 4</button>
+
+    <!-- Q6. Using jQuery count all elements within a division. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 6</h2>
+
+    <div id="iddiv">
+        <span>This is a span</span>
+        <p>This is a Paragraph</p>
+        <strong>This is a strong</strong>
+        <mark>This is Mark</mark>
+        <button onclick="countAll()">Click to check the effect 6</button>
+    </div>
+    <p id="output"></p>
+
+
+    <!-- Q7.  -->
+
+    <!-- Ans -->
+
+    <h2>Ans 7</h2>
+
+    <div name="tutorial-php">
+        <p>PHP</p>
+    </div>
+    <div name="java-articles">
+        <p>Java</p>
+    </div>
+    <div name="python-tutorial-and-exercises">
+        <p>Python</p>
+    </div>
+    <button id="button1" onclick="changeColour()">Click to see the effect 7</button>
+    
+
+    <!-- Q8. Finds all inputs with a value of "Red" and changes the text of the next sibling span. -->
+
+    <!-- Ans -->
+
+    <h2>Ans 8</h2>
+
+    <div>
+        <label>
+            <input type="radio" name="color" value="Red">
+            <span>name?</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="color" value="Green">
+            <span>value?</span>
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="color" value="Black">
+            <span>value?</span>
+        </label>
+    </div>
+    <button id="button1" onclick="siblingChange()">Click to see the effect</button>
+
+
+
+    <script>
+
+        // Ans(1).
+
+        function border() {
+            document.getElementsByTagName("textarea")[0].style.border = '2px solid red';
+            document.getElementsByTagName("p")[0].style.width = '30%';
+            document.getElementsByTagName("p")[0].style.border = '2px solid red';
+        }
+
+        // Ans(2).
+        function clickHere() {
+            let magic = document.createElement("p");
+            magic.innerText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, est fuga? Ab sapiente mollitia eligendi adipisci nam ea quas";
+            document.body.appendChild(magic);
+        }
+
+        // Ans(3).
+        function addClass() {
+            document.getElementsByTagName("p")[3].classList.toggle('w3r_font_color');
+        }
+
+        // Ans(4).
+        function addOneMore() {
+            document.getElementsByTagName("p")[4].classList.toggle('w3r_bg_red');
+        }
+
+        // Ans(6).
+        function countAll() {
+
+            let cnt = document.getElementById('iddiv');
+
+            let allElement = cnt.getElementsByTagName('*').length;
+
+            document.getElementById('output').innerHTML = allElement;
+        }
+
+        // Ans(7).
+
+        function changeColour() {
+           
+               let check2 = document.querySelectorAll("div[name*='tutorial']");
+               console.log(check2);
+               
+               for(let i = 0; i < check2.length; i++){
+                  check2[i].style.background = "yellow";
+               };
+               
+             
+        }
+        
+
+        // Ans(8).
+
+        function siblingChange() {
+            let check1 = document.querySelector("input[value='Red']");
+            console.log(check1)
+            check1.nextElementSibling.innerHTML = 'Red';
+        }
+
+    </script>
+
+</body>
+
+</html>>

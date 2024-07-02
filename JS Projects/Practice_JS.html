@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    <input type="number" id="firstinput">
+    <input type="number" id="secondinput">
+    <input type="number" id="output">
+    <button onclick="sum()">submit</button>  -->
+
+
+
+
+    <!-- <p id="output"></p> -->
+    <script>
+
+        // function sum(){
+        //     let yogesh = +(document.getElementById("firstinput").value);
+        //     let parth = +(document.getElementById("secondinput").value);
+        //     let darshil = yogesh * parth;
+        //     document.getElementById("output").value=darshil;
+        // }
+
+
+
+
+
+
+
+        // var newName = "yogesh";
+
+        // console.log(newName)
+
+        // var newName = "mohite";
+
+        // console.log(newName)
+
+        // let firstName = "parth"
+        // let firstName = "patel";
+        // console.log(firstName)
+
+
+        // var first_Name = "debraj";
+        // console.log(first_Name)
+
+        // var $firstName = "shivam";
+        // console.log($firstName)
+
+
+        // let firstName = "siddarth";
+        // console.log(firstName.length)
+
+        // let firstName = "krishnadfgfgdfsgbsfb";
+        // console.log(firstName[firstName.length-5])
+
+        // let lastName = "       lasandungri      ";
+        // console.log(lastName.length)
+
+        // let newName = lastName.trim();
+        // console.log(newName)
+        // console.log(newName.length)
+
+        // let secondName = "   divyesh ";
+        // secondName = secondName.slice(2);
+        // console.log(secondName)
+
+
+        // let thirdName = "vaibhav";
+        // thirdname = thirdName.slice(0,5);
+        // console.log(thirdname)
+
+
+        // let age = 18;
+        // age = age + "" ;
+        // console.log(typeof age)
+
+
+        // let rollNo = "yogesh";
+        // rollNo = + "yogesh";
+        // console.log(typeof rollNo)
+
+
+        // let age = "19";
+
+        // if(age<=18){
+        //     console.log("you cannot play rummy")
+        // }
+        // else{
+        //     console.log("you can play rummy")
+        // }
+
+
+
+        // let myName = "yogesh";
+
+        // if(myName=="yogesh"){
+        //     console.log("you can enter in park")
+        // }
+        // else{
+        //     console.log("you cannot enter in park")
+        // }
+
+
+
+        // let age = 18;
+        // let drink;
+
+        // if(age>=18){
+        //     drink = "you can drink bear";
+        // }
+        // else{
+        //     drink = "you can drink desi daaru";
+        // }
+
+        // console.log(drink)
+
+
+
+        // let luckyNumber = 14;
+        // let guessNumber = +prompt("try your luck");
+
+        // if(luckyNumber==guessNumber){
+        //    document.getElementById('output').innerHTML =("your are the winner get your prize from bear shop!!")
+        // }
+        // else{
+        //     if(guessNumber>luckyNumber){
+        //         document.getElementById('output').innerHTML = ("you are too high")
+        //     }
+        //     else{
+        //         document.getElementById('output').innerHTML = ("you are too low")
+        //     }
+        // }
+
+
+
+
+        // let cricketScore = "200";
+
+        // if (cricketScore > 100) {
+        //     console.log("Ready for T-20 leadership position");
+        // }
+        // else if (cricketScore < 20) {
+        //     console.log("you need more practice!");
+        // }
+        // else if (cricketScore < 50) {
+        //     console.log("you are playing good but need practice!");
+        // }
+        // else if (cricketScore < 80) {
+        //     console.log("very good nice batsman spirit");
+        // }
+        // else {
+        //     console.log("you are playing well!!!");
+        // }
+
+
+
+        // let festivalDate = 20;
+
+        // switch(festivalDate){
+        //     case 20:console.log("Happy diwali");
+        //     break;
+        //     case 14:console.log("Happy holi");
+        //     break;
+        //     case 26:console.log("Happy independence Day");
+        //     break;
+        //     case 5:console.log("happy RakshyaBandhan");
+        //     break;
+        //     case 19:console.log("happy Birthday");
+        // }
+
+        // console.log(festivalDate)
+
+
+
+        // let age = 19;
+
+        // if(age>18){
+        //     console.log("you can win the match")
+        // }
+        // else{
+        //     console.log("you loose the match")
+        // }
+
+
+        // for loop
+
+        // for(let v=0;v<=10;v++){
+        //     console.log(v)
+        // }
+
+
+
+
+        // arrays
+
+        // let marvel = ["Batman","spiderman","captianAmerica","Hawkeye"]
+
+        // console.log(marvel);
+
+        // marvel[0] = "Tony stark";
+
+        // console.log(marvel);
+
+
+        // let marvel = ["Batman","spiderman","captianAmerica","Hawkeye"]
+
+        // console.log(marvel);
+
+
+        //push
+
+        // marvel.push("Hulk");
+        // console.log(marvel);
+
+        //pop
+
+        // marvel.pop();
+        // console.log(marvel);
+
+
+        //unshift
+
+        // marvel.unshift("lasan");
+        // console.log(marvel);
+
+
+        //shift
+
+        // marvel.shift();
+        // console.log(marvel);
+
+
+        // spread operator
+
+        // let lasan = ["aloo","pyaj"]
+        // console.log(lasan)
+        // let dungri = ["bhindi","loki"]
+        // console.log(dungri)
+        // let lasan1 = [...lasan,...dungri,"bengan","bhaji"]
+        // console.log(lasan1)
+
+
+
+
+        //for loop
+
+        // let weltec = ["vaibhav","yogesh","darshil","parth","sagar","mehul"]
+
+        // for(let i=0; i<weltec.length; i++){
+        //     console.log(weltec[i].toUpperCase())
+        // }
+
+
+
+        //while loop
+
+        // const fruits = ["mango","orange","pineapple","apple","chicku"]
+
+        // let i = 0;
+        // while(i<fruits.length){
+        //     console.log(fruits[i].toUpperCase())
+        //     i++
+        // }
+
+
+
+
+        // for of loop
+
+        // let vegetables = ["onion","ginger","potato","tomato"]
+
+        // for( let secondaryVegetable of vegetables){
+        //     console.log(secondaryVegetable);
+        // }
+
+
+
+        // how to create a object
+
+        // let employeeDetail = {
+        //     name:"yogesh",
+        //     age:30,
+        //     id:390021,
+        //     profession:"fast typing",
+        //     hobbies:["lasan","dungri","aloo"]
+        // }
+
+        // console.log(employeeDetail)
+
+        // console.log(employeeDetail.hobbies[1].toUpperCase()) -->
+
+
+
+
+        // function
+
+        // function sumTwoNumbers (number1,number2){
+        //     return number1+number2;
+        // }
+
+        // let finalVelue = sumTwoNumbers(15,16)
+
+        // console.log(finalVelue)
+
+
+
+
+        // function odd_Even(number){
+        //     if(number % 2 === 0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // }
+
+        // console.log(odd_Even(5))
+
+
+
+
+        // function expression
+
+        // //let odd_Even = function(number){
+        //     if(number % 2 === 0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // }
+
+        // console.log(odd_Even())
+
+
+
+
+        //arrow function
+
+        // let odd_Even = (number) => {
+        //     if(number % 2 === 0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // }
+
+        // console.log(odd_Even(4))
+
+
+
+
+        // let weltec = ["mehul","vaibhav","somay","yogesh","parth"]
+
+        // for(i=0;i<weltec.length;i++){
+        //     console.log(weltec[3].toUpperCase());
+        // }\
+
+
+
+        // let addition = 45;
+
+        // function sum(){
+        //     if(addition==0){
+        //         return true;
+        //     }
+        //     return fasle;
+        // }
+
+        // sum();
+
+
+
+
+        // default paramerters
+
+        //function sum(a,b=0){
+        //           return a+b;
+        //    }
+
+        //    let add = sum(4,5);
+        //    console.log(add);
+
+
+
+
+        // for each function
+
+        // let num1 = [5,6,7,8,9,10];
+
+        // num1.forEach(function(number,index){
+        //     console.log(`number is ${number} index is ${index}`)
+        //     console.log(`${number}*2 = ${number*2}`)
+        // });
+
+
+
+
+        //for of loop
+
+        // let employee = [{
+        //     firstName: "yogesh",
+        //     lastName: "mohite",
+        //     age: 20,
+        // },
+        // {
+        //     firstName: "lasan",
+        //     lastName: "dungri",
+        //     age: 30,
+        // },
+        // {
+        //     firstName: "parth",
+        //     lastName: "patel",
+        //     age: 40,
+        // }
+        // ];
+
+        // for(let anime of employee){
+        //     console.log(anime.firstName);
+        // };
+
+
+
+        //map function
+
+        // let numbers = [5,6,7,8,9,10]
+
+        // let square = function(number){
+        //     return number*number;
+        // }
+
+        // let squareNumbers = numbers.map(square);
+        // console.log(squareNumbers);
+
+
+
+        //filter method
+
+        // let numbers = [1,3,4,6,7,9]
+        // let oddnumber = function(number){
+        //     return number%2!==0;
+        // }
+        // let total = numbers.filter(oddnumber);
+        // console.log(total);
+
+
+
+
+        //reduce method
+
+        // let numbers = [3,4,5,6,7,8,9,10]
+
+        // let sum = numbers.reduce((number1, number2)=>{
+        //      return number1+number2;
+        // });
+
+        // console.log(sum);
+
+
+
+
+        //live example of reduce method
+
+
+        // let customerCart = [{productid:1,productName:"iphone",productPrice:50000},
+        // {productid:2,productName:"lenovo",productPrice:80000},
+        // {productid:3,productName:"Gun",productPrice:30000},
+        // {productid:4,productName:"glasses",productPrice:499}]
+
+        // let totalAmt = customerCart.reduce((total,product)=>{
+        //     return total + product.productPrice;
+        // },0);
+
+        // console.log(totalAmt);
+
+
+
+        //sort method
+
+        // let number1 = [12,45,78,95,150];
+        // number1.sort((num1,num2)=>num1+num2);
+        // console.log(number1);
+
+
+
+        //live example of sort method
+
+        // let products = [{productid:1,productName:"iphone",productPrice:50000},
+        // {productid:2,productName:"lenovo",productPrice:80000},
+        // {productid:3,productName:"Gun",productPrice:30000},
+        // {productid:4,productName:"glasses",productPrice:499}];
+
+        // products.sort((product1,product2)=>product2.productPrice-product1.productPrice);
+        // console.log(products);
+
+
+
+
+        //find method
+        // let names = ['happy','dogg','cat','fish'];
+
+        // let ans = names.find((string)=>string.length==3)
+        // console.log(ans)
+
+
+        //live example of find method
+
+        // let myArray = [{productid:1,productName:"iphone",productPrice:50000},
+        // {productid:2,productName:"lenovo",productPrice:80000},
+        // {productid:3,productName:"Gun",productPrice:30000},
+        // {productid:4,productName:"glasses",productPrice:499}];
+
+        // let result = myArray.find((userid)=>userid.productid==2);
+        // console.log(result);
+
+
+         //every method
+
+        //  let oddnumber = [2,4,6,8,10,12];
+
+        //  function result(number){
+        //     return number = number%2==0;
+        //  };
+
+        // let ans = oddnumber.every(result);
+
+        //  console.log(ans);
+
+
+
+        // live example of every method
+
+        // let products = [{productid:1,productName:"iphone",productPrice:50000},
+        // {productid:2,productName:"lenovo",productPrice:80000},
+        // {productid:3,productName:"Gun",productPrice:30000},
+        // {productid:4,productName:"glasses",productPrice:499}];
+
+        // let ans = products.every((cart)=>cart.productPrice < 100000);
+        // console.log(ans);
+
+
+
+        //some method
+
+        // let number1 = [1,5,3,13,7,9];
+
+        // let sum = number1.some((num1)=>num1%2==0);
+        // console.log(sum);
+
+
+        //fill method
+
+        // let numbers = [1,2,3,4,5,6];
+        // numbers.fill(10,1,4);
+        // console.log(numbers); 
+
+
+
+        // splice method
+
+        // let names = ['lasan','dungri','bataka','kanda'];
+        // names.splice(1,2,'bhaji');
+        // console.log(names);
+
+
+
+        //iterable is only work on array & string through the help of for of looop (imp!!!)....
+
+        //eamples;
+        // let names = 'yogesh';
+        // for(character of names){
+        //     console.log(character);
+        // };
+
+        // let myArray = {item:'lasan',item2:'dungri'}
+
+        // for(on of myArray){
+        //     console.log(on);
+        // };
+
+
+    //     let numbers=[2,3,4,5,6]
+
+    //    let square = function(number){
+    //         return number*number
+    //     }
+    //     let numbersquare = numbers.map(square)
+
+    //     console.log(numbersquare)
+
+
+    // for(let i = 1 ; i<=5 ; i++){
+    //     for(let j = 1 ; j<=i;j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    console.log(is_array('w3resource'));
+
+    document.write("nikal chutiye");
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

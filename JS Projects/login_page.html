@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/new_page_real.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .main_div {
+            display: flex;
+            background-color: rgba(145, 145, 145, 0.151);
+        }
+
+        .left_side {
+            width: 50%;
+        }
+
+        .image_div img {
+            width: 100%;
+            height: 100vh;
+            filter: grayscale(1);
+            border-radius: 20px;
+        }
+
+        .Right_side {
+            width: 50%;
+            position: relative;
+        }
+
+        .center_div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 25px;
+        }
+
+        .f1 {
+            text-align: center;
+
+        }
+
+        .f1 img {
+            width: 50%;
+        }
+
+        .f1 h2 {
+            font-family: cursive;
+            font-size: 40px;
+        }
+
+        form label {
+            font-size: 20px;
+            font-family: monospace;
+            padding: 20px 0 10px 0;
+            display: block;
+        }
+
+        form input {
+            width: 100%;
+            padding: 5px 0;
+            border: none;
+            font-size: 15px;
+            border-bottom: 1px solid black;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .f3 {
+            text-align: center;
+        }
+
+        .f3 input {
+            width: 25%;
+            border: 1px solid black;
+            margin-top: 30px;
+            font-family: monospace;
+            background-color: #ffffff;
+            font-size: 18px;
+        }
+
+        span {
+            font-weight: bold;
+            color: rgb(192, 33, 33);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- submit_Page..... -->
+
+    <section>
+
+        <div class="main_div">
+
+            <div class="left_side">
+                <div class="image_div">
+                    <img src="image/may180344-768x559.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="Right_side">
+                <div class="center_div">
+                    <form action="" onsubmit="return openRegistration()">
+                        <div class="f1">
+                            <img src="image/OIP (4).jpeg" alt="">
+                            <h2>LOGIN</h2>
+                        </div>
+                        <div class="f2">
+                            <label for="">Email:</label>
+                            <input type="email" id="email" onblur="uppercaseSent()">
+                            <span id="error1"></span>
+                        </div>
+                        <div class="f2">
+                            <label for="">Password:</label>
+                            <input type="password" id="password">
+                            <span id="error2"></span>
+                        </div>
+                        <div class="f3">
+                            <input type="submit"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        function uppercaseSent() {
+            let x = document.getElementById('email');
+            x.value = x.value.toUpperCase();
+        }
+
+        function openRegistration() {
+
+
+            let Email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let emailCheck = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,6}$/;
+            let errorProceed = 0;
+
+            if (emailCheck.test(Email)) {
+                document.getElementById('error1').innerHTML = "";
+            } else {
+                document.getElementById('error1').innerHTML = "* Please enter yor email";
+                errorProceed = 1;
+            };
+
+            if (password == '') {
+                document.getElementById('error2').innerHTML = "* Please enter yor password";
+                errorProceed = 1;
+            } else {
+                document.getElementById('error2').innerHTML = "";
+            };
+
+            if (errorProceed == 0) {
+                window.open('http://127.0.0.1:5500/registrstion_Form.html');
+                return true;
+            } else {
+                return false
+            };
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 100%;
+
+        }
+
+        .inovation {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .common {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px 0 10px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="inovation">
+            <form action="">
+
+                <div class="common">
+
+                    <input type="checkbox" id="click" onclick="printcont()" value="print" id="chk">
+                    <span> check / uncheck </span>
+
+                </div>
+                <div class="common">
+
+                    <input type="text" placeholder="Enter your name" id="Aname">
+                    <input type="text" id="bname">
+
+                </div>
+                <div class="common">
+
+                    <input type="number" placeholder="Enter your age" id="Aage">
+                    <input type="text" id="bage">
+
+                </div>
+                <div class="common">
+
+                    <input type="number" placeholder="Enter your phoneNo." id="Aphone">
+                    <input type="text" id="bphone">
+
+                </div>
+                <div class="common">
+
+                    <input type="email" placeholder="Enter your email" id="Aemail">
+                    <input type="text" id="bemail">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+
+        function printcont() {
+
+            let click = document.getElementById('click').checked;
+
+            let Aname = document.getElementById('Aname').value;
+            let Aage = document.getElementById('Aage').value;
+            let Aphone = document.getElementById('Aphone').value;
+            let Aemail = document.getElementById('Aemail').value;
+
+
+            let bname = document.getElementById('bname');
+            let bage = document.getElementById('bage');
+            let bphone = document.getElementById('bphone');
+            let bemail = document.getElementById('bemail');
+
+            if (Aname == '') {
+
+                alert('please enter your name')
+
+            } else {
+
+                alert('your name is sucessfully entered')
+
+            }
+            if (Aage == '') {
+
+                alert('please enter your age')
+
+            } else {
+
+                alert('your age is sucessfully entered')
+
+            }
+            if (Aemail == '') {
+
+                alert('please enter your email')
+
+            } else {
+
+                alert('your email is sucessfully entered')
+
+            }
+            if (Aphone == '') {
+
+                alert('please enter your mobile no.')
+
+            } else {
+
+                alert('your mobile No. is sucessfully entered')
+
+            }
+
+            if (click) {
+
+                bname.value = Aname;
+                bname.disabled = true;
+
+                bage.value = Aage;
+                bage.disabled = true;
+
+                bemail.value = Aemail;
+                bemail.disabled = true;
+
+                bphone.value = Aphone;
+                bphone.disabled = true;
+
+            }
+            else {
+
+                bname.disabled = false;
+                bage.disabled = false;
+                bemail.disabled = false;
+                bphone.disabled = false;
+                
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>
